@@ -1,0 +1,55 @@
+// breakpoints
+$XS-min: 320px; $XS-max: 479px;
+$S-min: 480px; $S-max: 679px;
+$M-min: 680px; $M-max: 767px;
+$L-min: 768px; $L-max: 1023px;
+$XL-min: 1024px;
+
+$mobile-S: "(min-width:"$XS-min") and (max-width:"$XS-max")";
+$mobile-L: "(min-width:"$S-min") and (max-width:"$S-max")";
+$phablet: "(min-width:"$M-min") and (max-width:"$M-max")";
+$tablet: "(min-width:"$L-min") and (max-width:"$L-max")";
+$desktop: "(min-width:"$XL-min")";
+
+// Set-up media queries
+@mixin mobile-S{
+	@media #{$mobile-S}{
+		@content;
+	}
+}
+
+@mixin mobile-L{
+	@media #{$mobile-L}{
+		@content;
+	}
+}
+
+@mixin phablet{
+	@media #{$phablet}{
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media #{$tablet}{
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media #{$desktop}{
+		@content;
+	}
+}
+
+// Set-Up Grid
+
+@mixin column($col_count:5){
+	min-width: 100% / $col_count - 2;
+	max-width: 100% / $col_count - 2;
+	min-height: 120px;
+	margin: $def_gutter;
+	@extend %left;
+	margin-left:0;
+
+}

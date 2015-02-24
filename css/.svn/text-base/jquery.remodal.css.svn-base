@@ -1,0 +1,638 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+
+html.remodal_lock, body.remodal_lock {
+    overflow: hidden;
+    /* top: 0; */
+    height: 100%;
+    padding: 0 !important;
+}
+.recaptcha_only_if_privacy {
+    display: none;
+}
+/* Anti FOUC */
+
+.remodal, [data-remodal-id] {
+    visibility: hidden;
+}
+/* Overlay necessary styles */
+
+.remodal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    display: none;
+    /* overflow: visible; */
+    
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    height: 100%;
+    /* background: #f4f4f4; */
+}
+.remodal-overlay:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+    content: '';
+}
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay > * {
+    -webkit-transform: translateZ(0px);
+}
+/* Modal dialog necessary styles */
+
+.remodal {
+    position: relative;
+    display: inline-block;
+}
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+/* Default theme font */
+
+.remodal, .remodal * {
+    /* font-family: 'Exo 2', sans-serif; */
+    /* margin: 0 auto; */
+    width: 100%;
+}
+img#recaptcha_logo {
+    display: none;
+}
+a#recaptcha_whatsthis_btn {
+    display: none;
+}
+img#recaptcha_reload {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: none !important;
+    background-image: url('/v8/img/reload3.svg') !important;
+    /* display: none; */
+}
+#email_form select.required {
+    /*width: auto !important;*/
+    clear: both;
+    float: none;
+    /*margin: 0 auto;*/
+    width: 100%; 
+    border-radius: 5px;
+    margin-top: 20px;
+    /* height: 57px !important; */
+    /* padding: 20px !important; */
+    
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 10px;
+}
+#email_form {
+    /*margin: 0 auto;*/
+    margin-left: 15px;
+    /* clear: both; */
+    width: 55%;
+    float: left;
+    display: block;
+}
+#email_form > input {
+    clear: both;
+    float: none;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+}
+label#email-error {
+    position: absolute;
+    /* margin-bottom: 50%; */
+    
+    display: block;
+    /* top: 0; */
+    
+    margin-top: -70px;
+    margin-left: 46%;
+    background: #FFCE48;
+    padding: 20px;
+    border-radius: 10px;
+}
+label#email-error:after, label#email-error:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+label#email-error:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #FFCE48;
+    /* border-width: 30px; */
+    
+    margin-left: -17px;
+}
+label#email-error:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #FFCE48;
+    border-width: 13px;
+    margin-left: -22px;
+}
+table#recaptcha_table {
+    width: 100%;
+    margin: 0 auto !important;
+}
+div#recaptcha_widget:before {
+    content: "Verify:";
+    float: left;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+.recaptcha_reload img {
+    width: 26px;
+    height: 22px;
+}
+.recaptcha_reload {
+    float: none !important;
+    width: auto !important;
+    /* background-size: 100px auto; */
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    top: 10px;
+}
+.recaptcha_only_if_audio, .recaptcha_help, .recaptcha_only_if_image {
+    display: none;
+}
+a#recaptcha_switch_audio_btn {} .recaptcha_only_if_imag {} img#recaptcha_challenge_image {
+    float: left;
+    width: 100%;
+    margin-right: 10px;
+}
+.remodal textarea:focus {
+    /* border-color: rgb(234, 22, 139); */
+    
+    outline: none;
+    /* border: 2px solid rgb(234, 22, 139); */
+    
+    ;
+}
+.remodal textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+#feedback > textarea {
+    margin-top: 100px !important;
+    position: relative;
+    top: 50px;
+}
+div#newsletters {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* width: 100%; */
+    /* float: none; */
+    /* margin: 0 auto; */
+}
+#newsletters > select {
+    width: 47%;
+    float: left;
+    /* left: -25px; */
+    
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+    background: #fff;
+    opacity: 1;
+    margin-right: 15px;
+    /* margin-top: 20px; */
+    
+    margin-bottom: 20px;
+}
+#newsletters > select:disabled {
+background-color: #ccc;
+}
+
+.remodal > p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+}
+#newsletters > label {
+    float: left;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.remodal input {
+    width: 100% !important;
+    float: left;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    /* margin-right: 10px; */
+}
+.remodal input:focus {
+    /* border-color: rgb(234, 22, 139); */
+    /* border-radius: 7px; */
+    
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0;
+    /* box-sizing: border-box; */
+    /* border: 0; */
+    /* border-color: rgba(229, 103, 23, 0.8); */
+    /* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6); */
+    /* outline: 0 none; */
+    /* border: 2px solid rgb(234, 22, 139); */
+}
+.remodal input::-webkit-input-placeholder {
+    color: #000;
+}
+.remodal #newsletters input[type="checkbox"] {
+    width: auto !important;
+    position: relative;
+    clear: both;
+    margin-left: 30%;
+    margin-right: 20px;
+    float: left;
+    width: 20px !important;
+    height: 20px !important;
+}
+.remodal #name_container input {
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+@media all and (max-width: 768px) {
+    .remodal h1 {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .remodal > p {
+        font-size: 0.95em;
+        line-height: 1.4;
+        /* padding: 0; */
+    }
+    .remodal #name_container input {
+        width: 100%;
+        padding: 5px;
+    }
+    .remodal input#email {
+        width: 100%;
+        margin-top: -16px;
+    }
+}
+.remodal h1 {
+    color: rgb(234, 22, 139);
+}
+/* Background for effects */
+
+.remodal-bg {
+    -webkit-transition: -webkit-filter 0.2s linear;
+    -moz-transition: -moz-filter 0.2s linear;
+    -o-transition: -o-filter 0.2s linear;
+    transition: filter 0.2s linear;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+@media all and (min-width: 320px) and (max-width: 1023px){
+    .remodal-bg {
+        overflow:visible;
+    }
+}
+
+body.remodal_active .remodal-bg {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+/* Overlay default theme styles */
+
+.remodal-overlay {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    /*filter: blur(2px);
+    /* -webkit-filter: blur(2px); */
+    /* top: 0; */
+    /* position: relative; */
+}
+body.remodal_active .remodal-overlay {
+    opacity: 1;
+}
+/* Modal dialog default theme styles */
+
+.remodal {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #f4f4f4;
+    background-clip: padding-box;
+    color: #182a3c;
+    -webkit-box-shadow: 0px 0px 8px #171a24;
+    box-shadow: 0px 0px 8px #171a24;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    -o-transition: -o-transform 0.2s linear;
+    transition: transform 0.2s linear;
+}
+body.remodal_active .remodal {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.remodal.promo_ad, .remodal.promo {
+    padding: 5px;
+    background: #fff;
+    box-shadow: none;
+    min-height: 382px;
+    min-width:810px;
+}
+.remodal.promo_ad > img, .remodal.promo > img {
+    width: 100%;
+}
+/* Modal dialog vertical align  */
+
+.remodal, .remodal-overlay:after {
+    vertical-align: middle;
+    /* -webkit-filter: blur(2px); */
+}
+/* Close button */
+
+.remodal-close {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 28px;
+    height: 28px;
+    text-decoration: none;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #3e5.368;
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    transition: background 1s linear;
+    float: right;
+    display: none;
+}
+.remodal-close:after {
+    display: block;
+    font-size: 28px;
+    font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
+    content: "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â";
+    line-height: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3e5368;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.remodal-close:hover, .remodal-close:active {
+    background: #3e5368;
+}
+.remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
+    color: #f4f4f4;
+}
+/* Dialog buttons */
+
+.remodal-confirm, .remodal-cancel {
+    display: inline-block;
+    width: 140px;
+    padding: 9px 0;
+    margin: 0 0 5px 0;
+    font-size: 12pt;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-clip: padding-box;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.remodal-confirm {
+    border: none;
+    background: #0094FF;
+    color: #ffffff;
+    border-radius: 5px;
+    float: right !important;
+    /*margin-right: 10px;*/
+    margin-top: 20px;
+    width: 30% !important;
+}
+.remodal-confirm:hover, .remodal-confirm:active {
+    background: #0380db;
+    color: #ffffff;
+}
+.remodal-cancel {
+    border: 2px solid #BDBDBD;
+    background: #f4f4f4;
+    color: #BDBDBD;
+    border-radius: 5px;
+    float: left !important;
+    margin-right: 20px;
+    width: 26% !important;
+    margin-top: 20px;
+}
+.remodal-cancel:hover, .remodal-cancel:active {
+    background: #BDBDBD;
+    color: #f4f4f4;
+}
+/* Media queries
+   ========================================================================== */
+
+@media only screen and (min-width: 40.063em)
+/* min-width 641px */
+
+{
+    .remodal {
+        max-width: 720px;
+        margin: 20px auto;
+        min-height: 0;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        /* min-height: 0; */
+    }
+}
+/* IE8
+   ========================================================================== */
+
+html.lt-ie9, html.lt-ie9 body {
+    min-height: 100%;
+    overflow: auto !important;
+    margin: 0;
+}
+.lt-ie9 .remodal-overlay {
+    background: url(/v8/img/overlay-ie8.png);
+}
+.lt-ie9 .remodal {
+    width: 500px;
+    min-height: auto;
+}
+.remodal {
+    -vendor-animation-duration: 10s;
+    -vendor-animation-delay: 2s;
+}
+
+@media all and (max-width: 640px) {
+    .remodal {
+        padding: 20px;
+    }
+    .remodal-confirm {
+        width: 100% !important;
+        float: left !important;
+        padding: 9px 0!important;
+
+    }
+    .remodal-cancel {
+        width: 100% !important;
+        /* float: right !important; */
+    }
+    .remodal-overlay {
+    overflow-y: scroll !important;
+    /*overflow-x: hidden;*/
+    max-height: 730px;
+}
+    html.remodal_lock, body.remodal_lock {
+        /* top: 0; */
+        
+        max-height: 730px;
+        height: 730px;
+        overflow: hidden;
+    }
+    .remodal #newsletters input[type="checkbox"] {
+        margin-left: 0;
+    }
+    #newsletters > select {
+        float: left;
+        width: 43%;
+        margin-right: 16px;
+        font-size: 12px;
+    }
+    .remodal > textarea {} .remodal#feedback {
+        font-size: 1em;
+    }
+    #recaptcha_image {
+        width: auto !important;
+        max-width: 100%;
+        height: auto !important
+    }
+    #recaptcha_image img {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        /* left: -50px; */
+    }
+    #recaptcha_response_field {
+        width: 100% !important;
+        /* max-width: 302px; */
+        float: left;
+        height:50px;
+    }
+    .recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th {
+        float: left;
+        background: none;
+        width: 100% !important;
+    }
+    #recaptcha_area tr {
+        /* height: 50px !important; */
+    }
+    .recaptcha_image_cell {
+        width: 100% !important;background-color: white;
+        height: 57px;
+        padding: 7px!important;
+    }
+    .recaptcha_image_cell img {
+        height: auto !important;
+    }
+    .recaptcha_input_area {
+        /* width:80%; */
+    }
+    .remodal textarea {
+        margin-top: 10px;
+    }
+    table#recaptcha_table {
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:479px){
+    .remodal {
+        padding: 10px;
+    }
+}
+
+
+.recaptcha_inputtext {
+    margin-left:40px;
+    float:none;
+    width:250px !important;
+}
+
+label.error{
+    position: relative;
+    color: rgb(234, 22, 139);
+    top: -52px;
+}
+
+div#email_container .error {
+    top: -32px;
+}
+
+#recaptcha_container .error{
+    position: relative;
+    display: inline-block;
+    /* left: -100px; */
+    /* left: 10px; */
+    width: 200px;
+    text-align: left;
+    /* top: 10px; */
+    padding-top: 15px;
+    margin-bottom: 0;
+    /* padding-bottom: 0; */
+}
+
+#newsletters > select#country_of_residence {
+    width: 100%;
+}
+#newsletters > select#nationality {
+    display: none;
+}
+.g-recaptcha {
+    margin: 0 auto;
+    width: 300px;
+}

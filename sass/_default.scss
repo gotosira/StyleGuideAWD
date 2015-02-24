@@ -1,0 +1,88 @@
+@import 'variables'; // import variable.scss
+// Default Base
+html{
+	 text-shadow: $def_shadow;
+}
+body{
+	font-family: $def_family;
+	font-size: $def_font_size;
+	font-weight: $def_weight;
+	margin: $def_margin;
+	width: 100%;
+}
+
+h1{ font-size: $def_h1; }
+h2{ font-size: $def_h2; }
+h3{ font-size: $def_h3; }
+h4{ font-size: $def_h4; }
+p { font-size: $def_p;}
+dd, dt, dl { @extend %reset-margin-padding; }
+p { 
+	@extend %text-left; 
+	line-height: 1.6; 
+	@extend %reset-margin-padding;
+	a {
+		color:blue;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+pre { @extend %hide;}
+
+%margin-section { margin-bottom:20px !important; }
+
+%reset-margin-padding { margin:0; padding: 0;}
+// Default Modules
+%block{
+	display:block;
+	width:100%;
+	margin: $def_margin;
+}
+%clear{
+	clear:both;
+}
+
+%text-left{
+	text-align:left;
+}
+%text-right{
+	text-align:right;
+}
+%text-center{
+	text-align:center;
+}
+%left{
+	float:left;
+}
+%right{
+	float:right;
+}
+%show{
+	display:block;
+}
+%inline{
+	display:inline-block;
+}
+%hide{
+	display:none;
+}
+%visible{
+	visibility:visible;
+}
+%hidden{
+	visibility:hidden;
+}
+%pointer{
+	cursor: pointer;
+}
+%relative{
+	position: relative;
+}
+%absolute{
+	position: absolute;
+}
+%fixed{
+	position: fixed;
+}

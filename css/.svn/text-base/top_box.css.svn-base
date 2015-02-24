@@ -1,0 +1,112 @@
+.top_box{
+	display: block;
+	width:100%;
+	height:107px;
+	background:rgba(8, 32, 58, 1.0);
+	margin: 0px auto !important;
+	max-width: 1024px !important;
+	border-bottom:1px solid #526066;
+
+	position: relative;
+	margin: 0 auto;
+}
+/*.top_box > div{
+	margin: 0 auto !important;
+	padding-top:5px;
+	padding-bottom: 5px;
+	float: left; 
+	position: relative;
+	top: 5px;
+}*/
+.disable_block_top{
+	display: block;
+	width: 100%;
+	height: 107px;
+	background: rgba(8, 32, 58, 1.0);
+	/* margin: 0 auto !important; */
+	/* position: relative; */
+}
+.disable_block_top:before{
+	content: url('/v8/img/disable_block_top.png');
+	width: 728px;
+	height: 90px;
+	display: block;
+	margin: 0 auto !important; position: relative; 
+	top: 10px;
+}
+.top_bt{
+	background: url('/v8/img/close_bt_down.svg') no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-size: 20px 12px;
+	float: left;
+	transform: rotate(180deg) ;
+	-webkit-transform: rotate(180deg) ;
+	-moz-transform: rotate(180deg) ;
+	-o-transform: rotate(180deg) ;
+	-ms-transform: rotate(180deg);
+
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	position: absolute;
+	/* top: 20px; */
+	float: right;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.box-top{
+	display: none;
+}
+
+input.box-top:checked ~ div.top_box {
+	height: 20px;
+	display: block;
+	position: relative;
+	/* margin-left: 50%; */
+}
+input.box-top:checked ~ div.top_box > .top_bt {
+	transform: rotate(0) ;
+	-webkit-transform: rotate(0) ;
+	-moz-transform: rotate(0) ;
+	-o-transform: rotate(0) ;
+	-ms-transform: rotate(0);
+	top: 0;
+}
+input.box-top:checked ~ div.top_box > div {
+	display: none;
+}
+input.box-top:checked ~ div.disable_block_top:before {
+	display: none;
+}
+
+
+
+@media all and (max-width: 1023px){
+	.top_box{ 
+		display: none;
+	}
+}
+
+@media all and (min-width: 1024px){
+    .see_all{ 
+    	text-align: left !important;
+    }
+}
+
+.top_banner_wrapper{
+	max-width: 1024px;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 14%;
+}
+.banner-contact{
+	width: 14px;
+	height: 90px;
+	float: left;
+}

@@ -1,0 +1,191 @@
+@import 'layout'; // default grid and media queries
+@import 'default'; // default base CSS
+@import 'mixin'; // custom mixins
+body {
+    background-color: #f5f5f5;
+}
+.no-hover:hover {
+    background-color: $def_link_color !important;
+}
+.wrapper {
+	padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fff;
+    @extend %margin-section;
+    @extend %block;
+    @extend %text-center;
+    max-width: $def_max_width;
+    @extend %clear;
+    padding: 10px;
+    box-shadow: 0 0 1px 0 rgba(44, 54, 67, 0.3);
+    border-radius: 5px;
+    h2 {
+        @extend %text-left;
+        @include title-padding(5%);
+    }
+    @at-root h1:first-child, %base-h1 {
+        color: #297CBB;
+        line-height: 1.15em;
+        font-size: 2em;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.33);
+        width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    // .wrapper-font
+    &-font {
+        width: auto;
+        min-height: 700px;
+        @extend .wrapper;
+        h1, h2, h3, h4 {
+            @extend %left;
+            @extend %clear;
+            @extend %text-left;
+            @include title-padding(0%);
+            letter-spacing: -0.8px;
+            text-shadow: 0 1px 0 #fff;
+        }
+        h1:first-child {
+            @extend %base-h1;
+        }
+        .language-html {
+            @extend %show;
+            @extend %right;
+            top: 20px;
+            @extend %relative;
+        }
+        p {
+            @extend %clear;
+            width: 80%;
+            float: left;
+        }
+        .related_header {
+            color: #a09e9e;
+            font-family: arial;
+            font-weight: 600;
+        }
+    }
+    // .wrapper-top10
+    &-top10 {
+        @extend .wrapper;
+        ol {
+            li {
+                @extend %pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+                @extend %clear;
+                width: 100%;
+                @extend %text-left;
+                line-height: 1.3;
+            }
+        }
+    }
+    // .wrapper-header
+    &-header {
+        @extend .wrapper;
+        h3 {
+            color: #474646;
+            font-weight: 600;
+            @extend %relative;
+            margin: 0;
+            letter-spacing: -1.5px;
+        }
+        h3:after {
+            content: url('../img/go50.png');
+            top: 0.5em;
+            left: 0.2em;
+            @extend %relative;
+        }
+        pre {
+            @extend %block;
+        }
+    }
+}
+.block {
+    // block-color
+    &-color {
+        @extend %block;
+        @extend %title-padding;
+        @extend %pointer;
+        min-height: 200px;
+        // block-color li
+        li {
+            @extend %left;
+            padding: $def_padding;
+            margin: $def_gutter;
+            list-style: none;
+            @include column();
+            // block-color li dt
+            dt {
+                @include border-radius(6px);
+            }
+        }
+        // block-default
+        @at-root &-default, %third {
+            height: 50px;
+            background-color: #fff;
+            border: $def_border;
+            // block-default-hover
+            &--hover {
+                @extend %third;
+                background-color: $def_link_hover;
+            }
+            &:hover {
+                background-color: $def_link_hover;
+            }
+        }
+    }
+}
+.code-preview {
+    @extend %relative;
+    @extend %right;
+    @extend %hidden;
+    &-icn {
+        width: 32px;
+        height: 32px;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAI3AAACNwBn+hfPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEwSURBVFiF7dUxS9VhFMfxz0+FGkSLhuguKoFuRY7lYJNTbyA3X0Rb0tIrcLtDQ5OvoMWXoK1qTRdBnERoUgKfBp8h7nD//4uGGv8DB86Bc37ny+E5PCmluE2buNXpHUAH0AF0AHcBYGrchiSLeIeXmMMzPMZvDLCDfinluJVgKaXRMYn3+I7Sws+xiYkm7TR9RkmW8REn2MMPnOICs1io23hRN9LDo9q+VUr5MFK/BcB8KWUwsuga1gjwr631FST5lORty9pXSbaTPLgxAFzia5JvSdaSZGjoZJLXSb6gj+dYaVRteQUzOMR0FT3DTxzhwNXj3McvrNeeHlYbtVsCBPM1fordGs/Wwb2af8ZGG82xAIZgHuLNX3kfUzV+gqVx9O7PFXQAHUAH0AH8twB/ALf4PgSZdBcKAAAAAElFTkSuQmCCbd02093d0d36ecdc0be7fba31c533856');
+        @extend %block;
+        @extend %right;
+        @extend %relative;
+        @extend %pointer;
+        right: -8px;
+        top: 0;
+        &-all {
+            @extend .code-preview-icn;
+            @include title-padding(4px, right);
+            background-repeat-x: no-repeat;
+            background-repeat-x: no-repeat;
+            width: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 40px;
+            padding-top: 5px;
+            margin-top: 10px;
+            &:hover:before {
+                display: none !important;
+            }
+        }
+        &:hover:before {
+            content: 'preview';
+            display: block;
+            color: rgba(204, 204, 204, 0);
+            position: relative;
+            left: -57px;
+            top: 4px;
+            border-radius: 14px;
+            width: 74px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+    &:checked ~ dd > pre {
+        @extend %show;
+    }
+    &:checked ~ &-icn {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAC9AAAAvQEdWsb6AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAJxQTFRF////AAAAAAAAMzMzJycnIiIiICAgHh4eHx8fICAgHx8fICAgJCQfIyMjIiIiISEhICAgIyMgIyMfISEhIyMgISEhIyMgIiIgIiIiIyMhIiIiIiIiIiIhIiIhIyMhIyMhIiIiIiIiIyMhIiIhIiIhIiIhIiIhIiIhIiIiIyMhIiIhISEhIiIhIiIhIiIhIiIhIiIhIiIhIiIhIiIhoRQZewAAADN0Uk5TAAEDBQ0PEBEhKCkwMjs8Pj9ISU1gY25vcXWIiY2Voqmvtri5urvEydXW2t3j7fD3+P3+Gpe2tgAAAMFJREFUOMvlkscSgkAQRJvFgIiCAVCMoLC6AgL9///mwSqzqGf7NvW6akIP8H/SnMliMXG0d9zdkyS5d1/i5pplEoxGQVJy3Xzm1oHK9uIsiz1b8WA98kFRzU1JpikpzXlVDO55J6cvJEMDMEJK4TPv3PKW4gwew3MV0sOMqnXlYsOlhpgG+lL2YTCGtuRGXAxTRjqQpYAkJZBmgB5x+r3hdYut+DBk+5c1nw91HNafWnXrw1o1auPejWsfxu/hD3UCvLEhyI1CsNMAAAAASUVORK5CYII847fc2faa149d639a96100352f6821af');
+    }
+}

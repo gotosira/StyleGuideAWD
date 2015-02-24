@@ -1,0 +1,24 @@
+// All Customizable Classes Function
+
+// Function Title-Padding = Default Gutter
+@mixin title-padding($padding_value:$def_gutter, $padding_direction:left){
+	padding-#{$padding_direction}: $padding_value;
+}
+
+// Function Border-Radius = Default Border-Radius
+@mixin border-radius($radius:$def_border_radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Default Border-Radius Call
+%border-radius{
+	@include border-radius();
+}
+
+// Default Title Padding Call
+%title-padding{
+	@include title-padding();
+}

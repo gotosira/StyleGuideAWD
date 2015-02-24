@@ -1,0 +1,21 @@
+$j(document).ready(function($j) {
+    $j('.pdf-guide .remodal-confirm').click(function() {
+
+        $j.ajax({
+            url: "/guide-signup",
+            type: 'POST',
+            data: $j(".pdf-guide form").serialize(),
+            success: function(data) {
+                if (typeof(data.success) != 'undefined') {
+                    $j('.pdf-guide form').html('<p>Here\'s the link to <a target="_blank" href="' + data.success + '"><font color="blue"><u>download your guide</u></font></a>.');
+                } else if (typeof(data.error) != 'undefined') {
+                    $j('.pdf-guide form').text("There's been an error, please try again");
+                    $j('.pdf-guide form').css('color', 'red').fadeIn();
+                } else {
+                    $j('.pdf-guide form').text("There's been an error, please try again");
+                    $j('.pdf-guide form').css('color', 'red').fadeIn();
+                }
+            }
+        });
+    });
+});

@@ -1,0 +1,188 @@
+
+.arrow_down:before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    float: right;
+    top: 6px !important;
+    position: relative;
+    width: 0 !important;
+    height: 0 !important;
+    border-style: solid !important;
+    border-width: 5px 4px 0 4px !important;
+    border-color: #BFBFBF transparent transparent transparent !important;
+
+}
+
+.pdf-guide input.remodal-confirm{
+    /* clear: both; */
+    float: none !important;
+    /* margin-top: 40px !important; */
+    width: 60% !important;
+    background: #1156c8;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.icon-wrapper{
+    background: url('/v8/img/form_bg_icons.png') no-repeat !important;
+    width:100%; 
+    /* height:243px; */
+    /* display: block !important; */
+    z-index: 10000;
+    background-color: #fff;
+    background-position-y: 100;
+    background-position: 0 150px !important;
+}
+
+.icon-wrapper:after {
+    display: block;
+    content:"We will not pass your details on to any other company or individual. We take your privacy seriously!";
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #020202;
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+.icon-wrapper span {
+    color:#bb0706;
+}
+
+.icon-wrapper > h1 {
+    text-transform: uppercase;
+    color: #383838 !important;
+    font-weight: 300;
+    letter-spacing: -0.06em;
+}
+
+.icon-wrapper > p {
+    line-height: 1.6;
+    font-size: 14px;
+    line-height: 22px; font-size: 15px; margin-bottom: 35px; margin-top: 10px; font-family: arial; color: #6B6B6B; text-shadow: 0 1px 0 #fff;
+} 
+/*------ Begin Loading bar style ----- */
+.sticky_wrapper {
+    position: fixed;
+    bottom: bottom: 114px;
+    top: 30% !important;
+    right: -235px;
+    z-index: 10000;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.promo_sticky{
+    background: url('/v8/img/promo_thumb_slide.png');
+    width:65px; height: 114px; display: block;
+    /*top: 420px;*/
+    margin-top: 15px;
+    z-index: 20000;
+    right: -13px;
+    cursor: pointer;
+    position: fixed;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6);
+}
+.pdf_sticky{
+    width:287px; height: 114px; display: block;
+    right: -242px;
+    cursor: pointer;
+    /*top: 114px;*/
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6);
+}
+.slide_out{
+    right: 0;
+    /* position: fixed; */
+    /* margin-right: 200px; */
+}
+@media all and (max-width: 1023px){
+    .promo_sticky, .pdf_sticky { display: none;}
+}
+
+
+.pace .pace-progress {
+  background: rgb(234, 22, 139);
+  position: fixed;
+  z-index: 20000 !important;
+  top: 0;
+  left: 0;
+  height: 2px;
+
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+/*------ End Loading bar style ----- */
+
+
+input#checkOut:disabled{
+    /* background: #F1F1F1; */
+}
+.search_show {
+    display: block !important;
+}
+
+.search_hide{
+    display: none !important;
+}
+
+.pdf-bali{
+    background: url('/v8/img/pdf_thumb_slide-bali.png');
+}
+.pdf-bangkok{
+    background: url('/v8/img/pdf_thumb_slide-bangkok.png');
+}
+.pdf-pattaya{
+    background: url('/v8/img/pdf_thumb_slide-pattaya.png');
+}
+.pdf-huahin{
+    background: url('/v8/img/pdf_thumb_slide-huahin.png');
+}
+.pdf-chiangmai{
+    background: url('/v8/img/pdf_thumb_slide-chiangmai.png');
+}
+.pdf-phuket{
+    background: url('/v8/img/pdf_thumb_slide-phuket.png');
+}
+.pdf-samui{
+    background: url('/v8/img/pdf_thumb_slide-samui.png');
+}
+.pdf-krabi{
+    background: url('/v8/img/pdf_thumb_slide-krabi.png');
+}
+.pdf-phiphi{
+    background: url('/v8/img/pdf_thumb_slide-phiphi.png');
+}
+.pdf-singapore{
+    background: url('/v8/img/pdf_thumb_slide-singapore.png');
+}
+.pdf-hongkong{
+    background: url('/v8/img/pdf_thumb_slide-hongkong.png');
+}
+.pdf-kuala-lumpur{
+    background: url('/v8/img/pdf_thumb_slide-kuala-lumpur.png');
+}
+.pdf-langkawi{
+    background: url('/v8/img/pdf_thumb_slide-langkawi.png');
+}
+.pdf-penang{
+    background: url('/v8/img/pdf_thumb_slide-penang.png');
+}
+.pdf-malacca{
+    background: url('/v8/img/pdf_thumb_slide-malacca.png');
+}
+

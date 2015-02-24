@@ -1,0 +1,24 @@
+{
+      "list"      :     [{
+                                "label":"Grand Sukhumvit Hotel", 
+                                "category": "Hotel"
+                         },{    "label":"Radisson Blu Plaza Bangkok", 
+                                "category": "Hotel"
+                         },{    "label":"Chatrium Riverside", 
+                                "category": "Hotel"
+                         },{    "label":"Park Plaza Soi 18", 
+                                "category": "Hotel"
+                         },{    "label":"Hotel Muse Bangkok", 
+                                "category": "Hotel"
+                         },{    "label":"Lebua at State Tower",
+                                "category": "Hotel"
+                         },{    "label":"Radisson Suites",
+                                "category": "Hotel"
+                         },{    "label":"Citrus Sukhumvit 13 Bangkok",
+                                "category": "Hotel"
+                         },{    "label":"Baiyoke Sky Hotel",
+                                "category": "Hotel"
+                         },{    "label":"Anantara Bangkok Sathorn", 
+                                "category": "Hotel"
+                        }]
+}

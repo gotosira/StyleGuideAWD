@@ -1,0 +1,34 @@
+.ui-menu .ui-menu-item{
+	padding: 2px 1em 2px 0.4em !important;
+	font-size: 13px !important;
+}
+	.ui-autocomplete-category{
+		background: #F1F1F1;
+	}
+	ul.ui-autocomplete {
+		min-height: 300px;
+		max-height: 400px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	ul.ui-autocomplete li {
+		height: auto !important;
+	}
+
+@media all and (min-width: 320px) and (max-width: 768px){	
+	ul.ui-autocomplete {
+		width: 100% !important;
+		height: 300px;
+		overflow-y: scroll;
+		position: relative;
+		left: 0 !important;
+	}
+	ul.ui-autocomplete li {
+		height: auto !important;
+	}
+	.ui-menu .ui-menu-item{
+		padding: 2px 1em 2px 0.4em !important;
+		font-size: 14px !important;
+	}
+}
+

@@ -1,0 +1,106 @@
+.function-bar-gray {
+    background-color: #ccc;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 740px;
+}
+
+.h-listing-cover {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	height: auto;
+	position: relative;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+.h-listing-normal-cover {
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	width: 125px;
+}
+
+.h-listing-hotel-pic {
+	float: left;
+	height: 100px;
+	width: 150px;
+	margin-right: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	display: block;
+}
+
+.h-listing-icon-recommend {
+	background-image: url(../images/icon-recommend.png);
+	height: 87px;
+	width: 18px;
+	position: absolute;
+	left: -18px;
+	top: 12px;
+}
+
+.h-listing-text-cover {
+	float: left;
+	width: 465px;
+}
+
+.h-listing-hotel-name {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #2f5695;
+	padding-bottom: 3px;
+	display: block;
+}
+.h-listing-hotel-name a {
+	color: #2f5695;
+	text-decoration:none;
+}
+.h-listing-hotel-name a:hover {
+	color: #2f5695;
+	text-decoration:underline;
+}
+
+
+.h-listing-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.h-listing-right-detail {
+	float: right;
+	width: 120px;
+}
+
+.h-listing-price-cover {
+	width: 125px;
+	display: block;
+	text-align: center;
+	top: 10px;
+	position: absolute;
+	right: 0px;
+}
+
+.h-listing-from {
+	font-size: 9px;
+	color: #0066CC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.h-listing-price {
+	font-size: 14px;
+	color: #0066CC;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,195 @@
+/*	
+	1. When create variable use underscore 	( _ )
+	2. When create class name use dash  ( - )
+*/
+html {
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px; }
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 100%; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2.3em; }
+
+h3 {
+  font-size: 2.2em; }
+
+h4 {
+  font-size: 2em; }
+
+p {
+  font-size: 1.1em; }
+
+p {
+  line-height: 1.6; }
+  p a {
+    color: blue; }
+    p a:hover {
+      text-decoration: underline; }
+
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header {
+  margin-bottom: 20px !important; }
+
+dd, dt, dl, p {
+  margin: 0;
+  padding: 0; }
+
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header pre, .block-color, .code-preview-icn, .code-preview-icn-all {
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
+
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .wrapper-font p, .wrapper-top10 ol li {
+  clear: both; }
+
+p, .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-font h1, .wrapper-font h3, .wrapper-font h4, .wrapper-top10 ol li {
+  text-align: left; }
+
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header {
+  text-align: center; }
+
+.wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .block-color li {
+  float: left; }
+
+.wrapper-font .language-html, .code-preview, .code-preview-icn, .code-preview-icn-all {
+  float: right; }
+
+.wrapper-font .language-html, .code-preview:checked ~ dd > pre {
+  display: block; }
+
+pre {
+  display: none; }
+
+.code-preview {
+  visibility: hidden; }
+
+.wrapper-top10 ol li, .block-color, .code-preview-icn, .code-preview-icn-all {
+  cursor: pointer; }
+
+.wrapper-font .language-html, .wrapper-header h3, .wrapper-header h3:after, .code-preview, .code-preview-icn, .code-preview-icn-all {
+  position: relative; }
+
+.block-color {
+  padding-left: 0.78%; }
+
+body {
+  background-color: #f5f5f5; }
+
+.no-hover:hover {
+  background-color: #fff !important; }
+
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  max-width: 900px;
+  padding: 10px;
+  box-shadow: 0 0 1px 0 rgba(44, 54, 67, 0.3);
+  border-radius: 5px; }
+  .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2 {
+    padding-left: 5%; }
+  h1:first-child, .wrapper-font h1:first-child {
+    color: #297CBB;
+    line-height: 1.15em;
+    font-size: 2em;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.33);
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
+  .wrapper-font {
+    width: auto;
+    min-height: 700px; }
+    .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4 {
+      padding-left: 0%;
+      letter-spacing: -0.8px;
+      text-shadow: 0 1px 0 #fff; }
+    .wrapper-font .language-html {
+      top: 20px; }
+    .wrapper-font p {
+      width: 80%;
+      float: left; }
+    .wrapper-font .related_header {
+      color: #a09e9e;
+      font-family: arial;
+      font-weight: 600; }
+  .wrapper-top10 ol li {
+    width: 100%;
+    line-height: 1.3; }
+    .wrapper-top10 ol li:hover {
+      text-decoration: underline; }
+  .wrapper-header h3 {
+    color: #474646;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -1.5px; }
+  .wrapper-header h3:after {
+    content: url("../img/go50.png");
+    top: 0.5em;
+    left: 0.2em; }
+
+.block-color {
+  min-height: 200px; }
+  .block-color li {
+    padding: 5px;
+    margin: 0.78%;
+    list-style: none;
+    min-width: 18%;
+    max-width: 18%;
+    min-height: 120px;
+    margin: 0.78%;
+    margin-left: 0; }
+    .block-color li dt {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      border-radius: 6px; }
+  .block-color-default, .block-color-default--hover {
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc; }
+    .block-color-default--hover {
+      background-color: #ea168b; }
+    .block-color-default:hover, .block-color-default--hover:hover {
+      background-color: #ea168b; }
+
+.code-preview-icn, .code-preview-icn-all {
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAI3AAACNwBn+hfPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEwSURBVFiF7dUxS9VhFMfxz0+FGkSLhuguKoFuRY7lYJNTbyA3X0Rb0tIrcLtDQ5OvoMWXoK1qTRdBnERoUgKfBp8h7nD//4uGGv8DB86Bc37ny+E5PCmluE2buNXpHUAH0AF0AHcBYGrchiSLeIeXmMMzPMZvDLCDfinluJVgKaXRMYn3+I7Sws+xiYkm7TR9RkmW8REn2MMPnOICs1io23hRN9LDo9q+VUr5MFK/BcB8KWUwsuga1gjwr631FST5lORty9pXSbaTPLgxAFzia5JvSdaSZGjoZJLXSb6gj+dYaVRteQUzOMR0FT3DTxzhwNXj3McvrNeeHlYbtVsCBPM1fordGs/Wwb2af8ZGG82xAIZgHuLNX3kfUzV+gqVx9O7PFXQAHUAH0AH8twB/ALf4PgSZdBcKAAAAAElFTkSuQmCCbd02093d0d36ecdc0be7fba31c533856");
+  right: -8px;
+  top: 0; }
+  .code-preview-icn-all {
+    padding-right: 4px;
+    background-repeat-x: no-repeat;
+    background-repeat-x: no-repeat;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-top: 10px; }
+    .code-preview-icn-all:hover:before {
+      display: none !important; }
+  .code-preview-icn:hover:before, .code-preview-icn-all:hover:before {
+    content: 'preview';
+    display: block;
+    color: rgba(204, 204, 204, 0);
+    position: relative;
+    left: -57px;
+    top: 4px;
+    border-radius: 14px;
+    width: 74px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: left;
+    padding-left: 10px; }
+.code-preview:checked ~ .code-preview-icn, .code-preview:checked ~ .code-preview-icn-all {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAC9AAAAvQEdWsb6AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAJxQTFRF////AAAAAAAAMzMzJycnIiIiICAgHh4eHx8fICAgHx8fICAgJCQfIyMjIiIiISEhICAgIyMgIyMfISEhIyMgISEhIyMgIiIgIiIiIyMhIiIiIiIiIiIhIiIhIyMhIyMhIiIiIiIiIyMhIiIhIiIhIiIhIiIhIiIhIiIiIyMhIiIhISEhIiIhIiIhIiIhIiIhIiIhIiIhIiIhIiIhoRQZewAAADN0Uk5TAAEDBQ0PEBEhKCkwMjs8Pj9ISU1gY25vcXWIiY2Voqmvtri5urvEydXW2t3j7fD3+P3+Gpe2tgAAAMFJREFUOMvlkscSgkAQRJvFgIiCAVCMoLC6AgL9///mwSqzqGf7NvW6akIP8H/SnMliMXG0d9zdkyS5d1/i5pplEoxGQVJy3Xzm1oHK9uIsiz1b8WA98kFRzU1JpikpzXlVDO55J6cvJEMDMEJK4TPv3PKW4gwew3MV0sOMqnXlYsOlhpgG+lL2YTCGtuRGXAxTRjqQpYAkJZBmgB5x+r3hdYut+DBk+5c1nw91HNafWnXrw1o1auPejWsfxu/hD3UCvLEhyI1CsNMAAAAASUVORK5CYII847fc2faa149d639a96100352f6821af"); }

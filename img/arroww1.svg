@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="17.594px" height="22.102px" viewBox="0 0 17.594 22.102" enable-background="new 0 0 17.594 22.102" xml:space="preserve">
+<g display="none" opacity="0.7">
+	<g display="inline" opacity="0.55">
+		<polygon fill="#FFFFFF" points="17.594,11.552 0,22.102 0,1 		"/>
+	</g>
+	<g display="inline">
+		<polygon points="17.594,10.552 0,21.102 0,0 		"/>
+	</g>
+</g>
+<g display="none" opacity="0.7">
+	<g display="inline" opacity="0.55">
+		<polygon fill="#FFFFFF" points="8.043,21.102 -2.508,3.508 18.594,3.508 		"/>
+	</g>
+	<g display="inline">
+		<polygon points="8.043,20.102 -2.508,2.508 18.594,2.508 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g opacity="0.55">
+			<polygon points="17.594,11.551 0,22.102 0,1 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="17.594,10.551 0,21.102 0,0 			"/>
+		</g>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="17.594" height="22.102">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="0" y="0" width="17.594" height="22.102" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			
+				<image overflow="visible" width="90" height="109" xlink:href="C8426B07D9DE5A48.jpg"  transform="matrix(0.24 0 0 0.24 -1.9995 -2.0005)">
+			</image>
+		</g>
+	</mask>
+	<g opacity="0.75" mask="url(#SVGID_1_)">
+		<g opacity="0.55">
+			<polygon fill="#9B9A9A" points="17.594,11.551 0,22.102 0,1 			"/>
+		</g>
+		<g>
+			<polygon fill="#9B9A9A" points="17.594,10.551 0,21.102 0,0 			"/>
+		</g>
+	</g>
+</g>
+</svg>

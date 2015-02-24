@@ -1,0 +1,44 @@
+{
+      "list"      :     [{
+                                "label":"Bangna", 
+                                "category": "Popular Destinations"
+                         },{    "label":"Chatuchak", 
+                                "category": "Popular Destinations"
+                         },{    "label":"Chidlom - Pleonchit", 
+                                "category": "Popular Destinations"
+                         },{    "label":"China Town", 
+                                "category": "Popular Destinations"
+                         },{    "label":"Don Muang Airport", 
+                                "category": "Popular Destinations"
+                         },{    "label":"Impact - Nonthaburi",
+                                "category": "Popular Destinations"
+                         },{    "label":"Khao San - Old City",
+                                "category": "Popular Destinations"
+                         },{    "label":"Other Areas",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Petchburi",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Pratunam", 
+                                "category": "Popular Destinations" 
+                         },{    "label":"Ratchada Pisek",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Riverside",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Sathorn",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Siam",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Silom",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Sukhumvit", 
+                                "category": "Popular Destinations" 
+                         },{    "label":"Suvarnabhumi Airport",
+                                "category": "Popular Destinations" 
+                         },{    "label":"Thonburi", 
+                                "category": "Popular Destinations" 
+                         },{    "label":" ", 
+                                "category": " "         
+                         },{    "label":" ", 
+                                "category": " "         
+                        }]
+}

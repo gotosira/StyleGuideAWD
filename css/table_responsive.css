@@ -1,0 +1,462 @@
+@media (min-width: 320px){
+  .rwd-table td:first-child:before {
+     background: #43566F;
+  }
+  .rwd-table {
+   font-size: 14px; 
+   width: 100%;
+   font-weight: 100 !important;
+  }
+  .car-table {
+  width: 70%;
+  clear: none;
+}
+  .tableTitle{
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    clear: both;
+    background: #E2E2E2;
+  }
+  .rwd-table > tbody > tr > td > p{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding: 5px 5px 5px 7px;
+    margin: 0px 8px 0px 0px;
+  }
+    .level3  { width: auto; float:left;}
+  }
+
+  .car-table td{
+    font-weight: lighter;
+  }
+  .car-table td:first-child{
+    font-weight: 500;
+  }
+
+  .airport > tbody > tr:first-child > td.thead_info:first-child:before,
+  .driver > tbody > tr:first-child > td.thead_info:first-child:before {
+    width: 100% !important;
+    display: block !important;
+  }
+  .airport > tbody > tr:first-child > td.thead_info:first-child,
+  .driver > tbody > tr:first-child > td.thead_info:first-child  {
+    text-align: center;
+  }
+  .airport > thead > tr:first-child > th,
+  .driver > thead > tr:first-child > th{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .driver > tbody > tr > td > p {
+    padding-left: 10%;
+  }
+
+}
+
+.rwd-table {
+  margin: 1% 1% 1% 1%;
+  min-width: 250px;
+  width: 98%;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table td {
+  display: block;
+  border-top: 1px solid #dbdbdb !important;
+}
+.rwd-table td:first-child {
+  /* padding-top: .5em; */
+  font-size: 12px;
+  border-bottom: 1px solid #E2E2E2;
+  font-weight: lighter;
+}
+.rwd-table tr:first-child td{
+  border-top: none;
+}
+
+@media (min-width: 769px){
+   .tableTitle{
+    background: none;
+   }
+   .rwd-table td input {
+      margin-left: 10%;
+   }
+
+  .rwd-table td:first-child {
+     font-size: 12px;
+  }
+  .rwd-table td:first-child:before {
+     background: #426d9f;
+  }
+
+}
+.rwd-table td:last-child {
+  /* padding-bottom: .5em; */
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  width: 7em;
+  display: inline-block;
+  padding: 5px 5px 5px 7px;
+  margin: 0px 8px 0px 0px;
+  font-size: 11px;
+  /* text-shadow: 1px 1px 0px #F0F0F0; */
+  background-color: #426d9f;
+  color: #fff;
+  line-height: 2;
+  min-width: 10em;
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+
+
+@media (min-width: 769px){
+    /*.rwd-table {
+   font-size: 14px !important; 
+   width: 100%;
+  }*/
+  .carRental {
+  float: left;
+  width: 30%;
+  max-width: none;
+}
+.carRental img {
+  max-width: 250px;
+}
+
+  .tableTitle{
+    text-align: left !important;
+    padding-left: 40px !important;
+  }
+  .rwd-table th, .rwd-table td {
+     text-align: center;
+  }
+
+  .rwd-table th, .rwd-table td {
+      display: table-cell !important;
+      height: 38px;
+  }
+  
+  .level2  { width:100%; background-color:#b09f99;
+ padding: 4px 4px 4px 4px; /* border-right: 1px solid #FFFFFF; */}
+.level3  { width:100%; background-color:#FFF;
+  width: auto; padding: 4px 4px 4px 4px;
+}
+.rwd-table td:before {
+    display: none;
+  }
+
+}
+@media (min-width: 480px) {
+  .rwd-table th {
+    display: table-cell;
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+
+  
+    border-right: 1px solid #FFFFFF;
+}
+  .rwd-table td {
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  
+    border-bottom: 1px solid #D6D6D6;
+}
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+    .level3  { width: auto; float:left;}
+    .rwd-table td {
+    border-top: 1px solid #dbdbdb !important;
+}
+}
+
+
+body {
+  /* padding: 0 2em; */
+  font-family: Open Sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #555;
+  /* background: #eee; */
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+  font-size: 20px;
+}
+@media (min-width: 640px){
+  h1 {
+  font-size: 24px;
+  }
+    .level3  { width: auto; float:left;}
+}
+.rwd-table {
+background: #FAFAFA;
+  color: #656565;
+  /* border-radius: .4em; */
+  overflow: hidden;
+   /*text-shadow: 1px 1px 0px #363636; */
+  font-weight: bold;
+  border-spacing: 1px;
+  border-collapse: collapse;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.35);
+    box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.35);
+}
+.rwd-table tr {
+  border-color: #C3C3C3;
+}
+.rwd-table td {
+    border-top: 1px solid #dbdbdb !important;
+}
+.rwd-table th, .rwd-table td {
+  padding: 0px 0px 0px 0px;
+  font-size: 13px; 
+  border-bottom: 1px solid #DBDBDB;
+  background-color: #fff;
+}
+
+  
+  .level3  { width: auto; float:left;}
+
+.rwd-table th, .rwd-table td:before {
+  /* color: #5A6A94; */  
+  /* text-shadow: 1px 1px 0px #FFFFFF; */
+}
+
+  .rwd-table th {
+    display: none;
+  
+}
+
+@media only screen and (min-width:1024px) { 
+
+.level2  { width:100%; background-color:#b09f99;
+ padding: 4px 4px 4px 4px; /* border-right: 1px solid #FFFFFF; */}
+.level3  { background-color:#FFF; width: 100%; padding: 4px 4px 4px 4px;}
+ 
+ }
+
+ .car-table {
+  border: 2px solid #000;
+ }
+
+.driver td{
+  line-height: 2;
+}
+td:before {
+  min-width: 20em;
+  min-height: 3em;
+  vertical-align: inherit;
+}
+@media only screen and (max-width:480px){
+  .driver td:before {
+    min-width: 10em;
+  }
+}
+
+/* CAR TABLE */
+@media only screen and (min-width:320px) and (max-width:479px){
+   .car-table {
+        width: 100% !important;
+        clear: both;
+    }
+    .car-table td {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+    .car-table td:before {
+        width: 15em !important;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+    }
+    .car-table > thead > tr > td:nth-of-type(1):before, .car-table > thead > tr > td:nth-of-type(2):before, .car-table > thead > tr > td:nth-of-type(3):before, .car-table > thead > tr > td:nth-of-type(4):before, .car-table > thead > tr > td:nth-of-type(5):before {
+        display: none;
+    }
+    .car-table > thead > tr > td:first-child {
+        width: 100% !important;
+        text-align: center;
+    }
+    .car-table > thead > tr > td:nth-child(2), .car-table > thead > tr > td:nth-child(4) {
+        width: 50% !important;
+        float: left;
+        padding-left: 15%;
+    }
+    .carRental {
+        /*margin-left: 20%;*/
+        float: none !important;
+        position: relative;
+    }
+    .thead_info:before {
+        content: attr(data-content) '' !important;
+        text-align: left !important;
+    }
+
+.carRental img {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 45%;
+}
+.carSpec {
+    float: right;
+    width: 55%;
+    margin-left: 0
+}
+.carSpec ul {
+    font-size: 0.7em;
+}
+.carRental {
+    float: none;
+    max-width: none;
+    min-width: none;
+    width: 100%;
+}
+
+
+}
+
+@media only screen and (min-width:480px) and (max-width:639px){
+    .car-table{
+      width:100% !important;
+      clear: both;
+     }
+     .car-table td{
+      width:100% !important;
+      font-size: 14px !important;
+        height: auto !important;
+      
+     }
+
+    .car-table td:before{
+      width: 15em !important;
+      font-size: 12px !important;
+      line-height: 1.5 !important;
+      text-align: center !important;
+    }
+
+    .car-table > thead > tr > td:nth-of-type(1):before, 
+    .car-table > thead > tr > td:nth-of-type(2):before, 
+    .car-table > thead > tr > td:nth-of-type(3):before, 
+    .car-table > thead > tr > td:nth-of-type(4):before, 
+    .car-table > thead > tr > td:nth-of-type(5):before { display: none; }
+
+
+    .thead_info:before { content: attr(data-content) '' !important; text-align: left !important;}
+
+    .car-table > thead > tr > td:first-child{
+      width: 100% !important;
+      text-align: center;
+    }
+
+    .car-table > thead > tr > td:nth-child(2), .car-table > thead > tr > td:nth-child(4) {
+      width: 50% !important;
+      float: left;
+      padding-left: 15%;
+    }
+
+    .carRental {
+      float: none !important;
+      margin-left: 0;
+      max-width: none;
+      width: 100%;
+}
+
+.carRental img {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 45%;
+}
+.carSpec {
+    float: right;
+    margin-left: 0;
+    width: 55%;
+}
+
+
+}
+
+@media only screen and (min-width:640px) and (max-width:768px){
+  .car-table{
+    width:100% !important;
+    clear: both;
+   }
+   .car-table td{
+    width:100% !important;
+    font-size: 14px !important;
+      height: auto !important;
+    
+   }
+
+  .car-table td:before{
+    width: 15em !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+
+  .car-table > thead > tr > td:nth-of-type(1):before, 
+  .car-table > thead > tr > td:nth-of-type(2):before, 
+  .car-table > thead > tr > td:nth-of-type(3):before, 
+  .car-table > thead > tr > td:nth-of-type(4):before, 
+  .car-table > thead > tr > td:nth-of-type(5):before { display: none; }
+
+
+  .thead_info:before { content: attr(data-content) '' !important; text-align: left !important;}
+
+
+  .car-table > thead > tr > td:first-child{
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .car-table > thead > tr > td:nth-child(2), .car-table > thead > tr > td:nth-child(4) {
+    width: 50% !important;
+    float: left;
+    padding-left: 15%;
+  }
+
+.carRental {
+    float: none !important;
+    margin-left: 0;
+    max-width: none;
+    position: relative;
+    width: 100%;
+}
+
+.carRental img {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 45%;
+}
+.carSpec {
+    display: inline-block;
+    float: right;
+    margin-left: 0;
+    width: 55%;
+}
+
+}
+
