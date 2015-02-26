@@ -9,11 +9,12 @@ body{
 	font-weight: $def_weight;
 	margin: $def_margin;
 	width: 100%;
+	@extend %body-z-index;
 }
 
 h1{ font-size: $def_h1; }
 h2{ font-size: $def_h2; }
-h3{ font-size: $def_h3; }
+h3{ font-size: $def_h3; text-shadow: 0 1px 0 #fff;}
 h4{ font-size: $def_h4; }
 p { font-size: $def_p;}
 dd, dt, dl { @extend %reset-margin-padding; }
@@ -29,7 +30,7 @@ p {
 	}
 }
 
-pre { @extend %hide;}
+pre { @extend %hide; padding: 0 !important; }
 
 %margin-section { margin-bottom:20px !important; }
 

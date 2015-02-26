@@ -4,10 +4,107 @@
 body {
     background-color: #f5f5f5;
 }
+.body-wrapper{
+    padding-top:50px;
+}
+.top{
+    &-menu{
+     width:100%;
+     color:#fff;
+     padding-bottom: 2px;
+     text-align: left;
+     font-size:1.3em;
+     padding-left:5%;
+     padding-top:10px;
+     @extend %fixed;
+     @extend %top-menu-index;
+     border-bottom: 1px solid #E8E8E8;
+     background-color: #556E83;
+     margin-top:0;
+     li{
+        @extend %left;
+        text-decoration: none;
+        list-style: none;
+        @extend %pointer;
+     }
+     &-detail{
+        float: right !important;
+        padding-right: 10%;
+        li{
+            padding-right:20px;
+            @extend %pointer;
+        }
+        .active{
+            border-bottom-color: #ea168b;
+            padding-bottom: 10px;
+            border-bottom: 1px solid;
+            padding-right: 0;
+            margin-right: 20px;
+        } 
+     }
+    }
+}
+.red_tab{
+    background-color: #F00;
+    left: 0;
+    top: 0;
+    vertical-align: middle;
+    padding: 4px;
+    z-index: 0;
+    width: 125px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color:#fff;
+}
+.teaser-big-detail{
+    font-family: "Arial";
+    @extend %relative;
+    top:10px;
+    h4{
+        font-size: 1.5em;
+        margin: 0;
+        a{
+            color: #494949;
+            line-height: 22px;
+
+        }
+    }
+    p{
+        width:70% !important;
+        font-family: $def_family;
+        font-size: 1em;
+        a{
+            color: rgb(234, 22, 139);
+            padding-bottom: 10px;
+            letter-spacing: -0.2px;
+            text-decoration: none;
+        }
+    }
+    .language-html{
+        top:0 !important;
+    }
+}
+.div-line{
+    border-bottom: 3px solid #D9DADA;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.86);
+    margin: 10px 0;
+}
 .no-hover:hover {
     background-color: $def_link_color !important;
 }
 .wrapper {
+    .language-html{
+        @extend %right;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    div {
+        @extend %clear;
+    }
+    overflow: auto;
 	padding-left: 5%;
     padding-right: 5%;
     background-color: #fff;
@@ -23,7 +120,7 @@ body {
         @extend %text-left;
         @include title-padding(5%);
     }
-    @at-root h1:first-child, %base-h1 {
+    @at-root h1:first-child, %base-h1, .base-h1 {
         color: #297CBB;
         line-height: 1.15em;
         font-size: 2em;
@@ -35,8 +132,12 @@ body {
     }
     // .wrapper-font
     &-font {
-        width: auto;
-        min-height: 700px;
+        pre{
+            @extend %block;
+            max-height: 110px;
+            padding: 0;
+            overflow:hidden;
+        }
         @extend .wrapper;
         h1, h2, h3, h4 {
             @extend %left;
@@ -59,11 +160,15 @@ body {
             @extend %clear;
             width: 80%;
             float: left;
+            a{
+                text-decoration: none;
+            }
         }
         .related_header {
             color: #a09e9e;
             font-family: arial;
             font-weight: 600;
+           
         }
     }
     // .wrapper-top10
@@ -85,12 +190,16 @@ body {
     // .wrapper-header
     &-header {
         @extend .wrapper;
+       
         h3 {
             color: #474646;
             font-weight: 600;
             @extend %relative;
             margin: 0;
-            letter-spacing: -1.5px;
+            font-size: 2.5em;
+            font-family: Arial;
+            letter-spacing: -0.8px;
+            line-height: 1.3;
         }
         h3:after {
             content: url('../img/go50.png');
@@ -101,15 +210,124 @@ body {
         pre {
             @extend %block;
         }
+        div{
+            font-size: 1.2em;
+            margin: 0 auto;
+            color: #666666;
+        }
+        &-related{
+            @extend .wrapper-header;
+            padding-top: 30px;
+            h3{
+                color: #a09e9e;
+                font-size: 1.8em;
+                line-height: 0;
+                display: inline-block;
+                &:before{
+                    background-image: url("../img/line-dot.png");
+                    background-repeat: no-repeat;
+                    content: "";
+                    @extend %block;
+                    height: 7px;
+                    @extend %relative;
+                    width: 100%;
+                    right: 115%;
+                    -webkit-transform: scaleX(-1);
+                    -moz-transform: scaleX(-1);
+                    -ms-transform: scaleX(-1);
+                    -o-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                }
+                &:after{
+                    background-image: url("../img/line-dot.png");
+                    background-repeat: no-repeat;
+                    content: "";
+                    @extend %block;
+                    height: 7px;
+                    @extend %relative;
+                    width: 100%;
+                    left: 115%;
+                    top:-5px;
+                }
+
+            }
+            
+            .code-preview-button{
+                top:-25px;
+                background-color:#fff;
+                z-index: $def_z-index-4;
+            }
+        }
+    }
+    &-hr{
+        @extend .wrapper;
     }
 }
+
 .block {
     // block-color
     &-color {
         @extend %block;
         @extend %title-padding;
         @extend %pointer;
-        min-height: 200px;
+        //block-color-star
+        &-star{
+
+            @at-root &:before, %star-profile{
+                color: #fcc416;
+                font-family: "awdstar";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                letter-spacing: 2px;
+                speak: none;
+                position: relative;
+                text-decoration: inherit;
+                text-align: left;
+                font-variant: normal;
+                text-transform: none;
+                text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+                @extend %block;
+                @include padding(0, 0, 5px, 5px);
+                
+            }
+            &-5{
+                @extend %left;
+                &:before{
+                    content: '\e802 \e802 \e802 \e802 \e802';
+                    @extend %star-profile;
+                }
+            }
+            &-4{
+                @extend %left;
+                &:before{
+                    content: '\e802 \e802 \e802 \e802';
+                    @extend %star-profile;
+                }
+            }
+            &-3{
+                @extend %left;
+                &:before{
+                    content: '\e802 \e802 \e802';
+                    @extend %star-profile;
+                }
+            }
+            &-2{
+                @extend %left;
+                &:before{
+                    content: '\e802 \e802';
+                    @extend %star-profile;
+                }
+            }
+            &-1{
+                @extend %left;
+                &:before{
+                    content: '\e802';
+                    @extend %star-profile;
+                }
+            }
+        }
+
         // block-color li
         li {
             @extend %left;
@@ -122,12 +340,12 @@ body {
                 @include border-radius(6px);
             }
         }
-        // block-default
+        // block-color-default
         @at-root &-default, %third {
             height: 50px;
             background-color: #fff;
             border: $def_border;
-            // block-default-hover
+            // block-color-default--hover
             &--hover {
                 @extend %third;
                 background-color: $def_link_hover;
@@ -136,12 +354,41 @@ body {
                 background-color: $def_link_hover;
             }
         }
+        // block-color-link
+        &-link{
+            @extend %third;
+            background-color: rgb(234, 22, 139);
+        }
+        &-paragraphlink{
+            @extend %third;
+            background-color: rgb(0,0,255);
+            &:hover{
+                background-color: rgb(0, 0, 255);
+            }
+        }
+        &-hilight{
+            @extend %third;
+            background-color: #fdf4d7;
+            &:hover{
+                background-color: #fdf4d7; 
+            }
+        }
     }
 }
 .code-preview {
     @extend %relative;
     @extend %right;
     @extend %hidden;
+    &-button{
+        @extend .code-preview;
+        @include padding(8px, 8px, 10px, 10px);
+        border-radius: 5px;
+        border:1px solid #ccc;
+        visibility: visible !important;
+        top: -40px;
+        @extend %pointer;
+        text-transform: uppercase;
+    }
     &-icn {
         width: 32px;
         height: 32px;
@@ -153,16 +400,18 @@ body {
         right: -8px;
         top: 0;
         &-all {
-            @extend .code-preview-icn;
-            @include title-padding(4px, right);
+            @include padding(8px, 8px, 5px, 5px);
             background-repeat-x: no-repeat;
-            background-repeat-x: no-repeat;
-            width: 100px;
-            font-size: 14px;
+            font-size: 0.5em;
+            color:#000;
             font-weight: 500;
-            padding-left: 40px;
-            padding-top: 5px;
-            margin-top: 10px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            right: 10px;
+            @extend %right;
+            @extend %relative;
+            @extend %pointer;
             &:hover:before {
                 display: none !important;
             }

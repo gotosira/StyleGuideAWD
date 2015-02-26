@@ -21,6 +21,7 @@ $def_max_width: 900px;
 // Default Shadow Style:
 $def_shadow: rgba(0,0,0,.01) 0 0 1px;
 
+
 // Default Fonts Style:
 $def_family: "Open Sans", Arial, Helvetica, sans-serif;
 $def_font_size: 12px;
@@ -44,8 +45,20 @@ $def_gutter: 0.78%;
 
 
 // Default Z-Index Level
- 
+$def_base-index: 0;
+$def_z-index-1: 100;
+$def_z-index-2: 200;
+$def_z-index-3: 300;
+$def_z-index-4: 400;
+$def_z-index-5: 500;
 
+%body-z-index{
+	z-index: $def_base-index;
+}
+
+%top-menu-index{
+	z-index: $def_z-index-1;
+}
 
 
 

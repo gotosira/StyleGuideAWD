@@ -27,11 +27,21 @@
 
 <body>
 
-    <div> Portal Style Guide 1.0 </div>
+    <ul class="top-menu">
+        <li><div> Portal Style Guide 1.0 </div></li>
+        <li class="top-menu-detail">
+            <ul >
+                <li class="active">Design Elements </li>
+                <li> UI Elements </li>
+            </ul>
+        </li>
+    </ul>
 
+
+<section class="body-wrapper">
 <!-- Default Colors Column-->
 <section class="wrapper">
-	<h1> Font Colors 
+	<h1> Font Colors
 		<span class="code-preview-icn-all"> show all </span>
 	</h1>
     <ul class="block-color">
@@ -56,35 +66,59 @@
         <li>
             <input class="code-preview" type="checkbox" id="block-color-03"></input>
             <label class="code-preview-icn" for="block-color-03"></label>
-            <dt class="block-color-default--hover"></dt>
+            <dt class="block-color-link"></dt>
             <dd>
-                <div> Hover Color </div>
+                <div> Link Color </div>
                 <pre><code class="language-css">.test { color: rgb(234, 22, 139); }</code></pre>
             </dd>
         </li>
         <li>
             <input class="code-preview" type="checkbox" id="block-color-04"></input>
             <label class="code-preview-icn" for="block-color-04"></label>
-            <dt class="block-color-default--hover"></dt>
+            <dt class="block-color-paragraphlink"></dt>
             <dd>
-                <div> Hover Color </div>
-                <pre><code class="language-css">.test { color: rgb(234, 22, 139); }</code></pre>
+                <div> Paragrah Link Color </div>
+                <pre><code class="language-css">.test { color: rgb(0, 0, 255); }</code></pre>
             </dd>
         </li>
         <li>
             <input class="code-preview" type="checkbox" id="block-color-05"></input>
             <label class="code-preview-icn" for="block-color-05"></label>
-            <dt class="block-color-default--hover"></dt>
+            <dt class="block-color-hilight"></dt>
             <dd>
-                <div> Hover Color </div>
-                <pre><code class="language-css">.test { color: rgb(234, 22, 139); }</code></pre>
+                <div> Hilight BG Color </div>
+                <pre><code class="language-css">.test { color: #fdf4d7; }</code></pre>
             </dd>
         </li>
     </ul>
-    </section>
+        <h1 class="base-h1"> Stars Rating </h1>
+        <div>
+            <div class="block-color-star-5"></div>
+            <code class="language-html"> .block-color-star-5 </code>
+        </div>
+        <div>
+             <div class="block-color-star-4">
+             </div><code class="language-html"> .block-color-star-4 </code>
+        </div>
+        <div>
+            <div class="block-color-star-3"></div>
+            <code class="language-html"> .block-color-star-3 </code>
+        </div>
+        <div>
+            <div class="block-color-star-2"></div>
+            <code class="language-html"> .block-color-star-2 </code>
+        </div>
+        <div>
+            <div class="block-color-star-1"></div>
+            <code class="language-html"> .block-color-star-1 </code>
+        </div>
+        <div>
+            <div class="red_tab"> Best 20 </div>
+            <code class="language-html"> .red_tab </code>
+        </div>
 
-
-    <section class="wrapper-font">
+</section>
+<section class="wrapper-font">
         <h1> Font Style and Sizes </h1>
         <h1> Bangkok Hotel & Travel Guide </h1><code class="language-html"> H1 </code>
         <h2> Bangkok Hotel & Travel Guide </h2><code class="language-html"> H2 </code>
@@ -94,29 +128,63 @@
         <p>
             Bangkok welcomes more visitors than any other city in the world and it doesn’t take long to realise why. This is a city of extremes with action on every corner: Marvel at the gleaming temples, catch a tuk tuk along the bustling Chinatown or take a longtail boat through <a href="http://www.bangkok.com/shopping-market/floating-markets.htm">floating markets</a>. Food is another Bangkok highlight, from local dishes served at humble street stalls to haute cuisine at romantic rooftop restaurants. Luxury malls compete with a sea of boutiques and markets, where you can treat yourself without overspending. Extravagant five-star hotels and trendy hostels welcome you with the same famed Thai hospitality. And no visit to Bangkok would be complete without a glimpse of its famous nightlife – from cabarets to exotic red-light districts, Bangkok never ceases to amaze...
         </p><code class="language-html"> p </code>
-    </section>
-
-    <section class="wrapper-top10">
+        <div class="teaser-big-detail">
+            <h4>
+                <a> Khlong Lat Mayom Floating Market </a>
+            </h4>
+            <p>Khlong Lat Mayom is one of the three floating markets located close to Bangkok and really has the charm and authenticity of a local market. Read More...<a href="#">Read More..</a></p>
+            <code class="language-html"> .teaser-big-detail > h4 > a </code>
+            <pre>
+                    <code class="language-markup">
+                        &lt;div class="teaser-big-detail">
+                                    &lt;h4>
+                                        &lt;a>&lt;/a>
+                                    &lt;/h4>
+                                &lt;/div>
+                    </code>
+            </pre>
+        </div>
+        
+</section>
+<section class="wrapper-top10">
         <ol>
             <li> Maduzi Bangkok Hotel</li>
             <li> Grande Centre Point Ratchadamri </li>
             <li> Hotel Icon Bangkok </li>
         </ol>
-    </section>
+</section>
+<section class='wrapper-hr'>
+        <div class="div-line"></div>
+</section>
 
-    <section class="wrapper-header">
+<section class="wrapper-header">
         <h3> Where to Stay in Bangkok </h3>
-        <span class="code-preview-icn-all"> show HTML structure </span>
+        <div class="wrapper-header-sub"> Sell all </div>
+        <span class="code-preview-button"> Show HTML </span>
         <pre>
-			<code class="language-markup">&lt;div class='section_header'>
+			<code class="language-markup">
+
+            &lt;div class='section_header'>
 				&lt;a>
 					&lt;h3> ... &lt;/h3>
 				&lt;/a>
 			&lt;/div>
 			</code>
 		</pre>
-    </section>
+</section>
 
+<section class="wrapper-header-related">
+        <h3> Great Hotel Deals in Bangkok </h3>
+        <span class="code-preview-button"> Show HTML </span>
+        <pre>
+            <code class="language-markup">
+
+            &lt;div class='related_header'>
+                    &lt;h3> ... &lt;/h3>
+            &lt;/div>
+            </code>
+        </pre>
+</section>
 
 
 

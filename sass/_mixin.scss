@@ -22,3 +22,10 @@
 %title-padding{
 	@include title-padding();
 }
+
+@mixin padding($pad_right:2px, $pad_left:2px, $pad_top:2px, $pad_bottom:2px){
+	padding-right:$pad_right;
+    padding-left:$pad_left;
+    padding-top:$pad_top;
+    padding-bottom:$pad_bottom;
+}

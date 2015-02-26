@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".code-preview-icn-all").click(function(){$(".code-preview").each(function(){$(this).is(":checked")?$(this).prop("checked",!1):$(this).prop("checked",!0)})})});
+$(document).ready(function(){$(".code-preview-icn-all").click(function(){$(".code-preview").each(function(){$(this).is(":checked")?$(this).prop("checked",!1):$(this).prop("checked",!0)})}),$(".code-preview-button").click(function(){var e=$(this).next("pre");e.slideToggle(),$("body").animate({scrollTop:e.offset().top},500)})});
