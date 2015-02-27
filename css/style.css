@@ -51,7 +51,7 @@ dd, dt, dl, p {
   margin: 0;
   padding: 0; }
 
-.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-font pre, .wrapper-header pre, .wrapper-header-related pre, .wrapper-header-related h3:before, .wrapper-header-related h3:after, .block-color, .block-color-star:before, .block-color-star-5:before, .block-color-star-4:before, .block-color-star-3:before, .block-color-star-2:before, .block-color-star-1:before, .code-preview-icn {
+.button-destination, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-font pre, .wrapper-header pre, .wrapper-header-related pre, .wrapper-header-related h3:before, .wrapper-header-related h3:after, .block-color, .block-color-star:before, .block-color-star-5:before, .block-color-star-4:before, .block-color-star-3:before, .block-color-star-2:before, .block-color-star-1:before, .code-preview-icn {
   display: block;
   width: 100%;
   margin: 0 auto; }
@@ -62,10 +62,10 @@ dd, dt, dl, p {
 p, .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-header-related h2, .wrapper-hr h2, .wrapper-font h1, .wrapper-font h3, .wrapper-font h4, .wrapper-top10 ol li {
   text-align: left; }
 
-.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr {
+.button-destination, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr {
   text-align: center; }
 
-.top-menu li, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .block-color-star-5, .block-color-star-4, .block-color-star-3, .block-color-star-2, .block-color-star-1, .block-color li {
+.top-menu li, .promo-tab-red, .promo-tab-hilight, .button-destination, .tab-tour, .tab-teaser, .tab-price, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .block-color-star-5, .block-color-star-4, .block-color-star-3, .block-color-star-2, .block-color-star-1, .block-color li {
   float: left; }
 
 .wrapper .language-html, .wrapper-font .language-html, .wrapper-top10 .language-html, .wrapper-header .language-html, .wrapper-header-related .language-html, .wrapper-hr .language-html, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
@@ -83,7 +83,7 @@ pre {
 .top-menu li, .top-menu-detail li, .wrapper-top10 ol li, .block-color, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
   cursor: pointer; }
 
-.teaser-big-detail, .wrapper-font .language-html, .wrapper-header h3, .wrapper-header-related h3, .wrapper-header h3:after, .wrapper-header-related h3:after, .wrapper-header-related h3:before, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
+.button-destination, .tab-teaser, .teaser-big-detail, .wrapper-font .language-html, .wrapper-header h3, .wrapper-header-related h3, .wrapper-header h3:after, .wrapper-header-related h3:after, .wrapper-header-related h3:before, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
   position: relative; }
 
 .top-menu {
@@ -124,7 +124,7 @@ body {
       padding-right: 0;
       margin-right: 20px; }
 
-.red_tab {
+.promo-tab-red {
   background-color: #F00;
   left: 0;
   top: 0;
@@ -138,6 +138,204 @@ body {
   letter-spacing: -0.04em;
   text-align: center;
   color: #fff; }
+.promo-tab-hilight {
+  background-color: #ff0000;
+  display: block;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 0.2em 1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "arial";
+  font-size: 2em;
+  width: 200px;
+  margin-bottom: 10px; }
+
+.button-destination {
+  margin: 0;
+  font-family: "Arial";
+  border-radius: 4px;
+  background-color: #0094FF;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1.6em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 1.25em;
+  max-width: 232px; }
+  .button-destination:hover {
+    background-color: #0380db; }
+
+.tab-tour {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: -moz-linear-gradient(15deg, #fbfbfb 15%, #fafafa 85%);
+  background-image: -o-linear-gradient(15deg, #fbfbfb 15%, #fafafa 85%);
+  background-image: -webkit-linear-gradient(15deg, #fbfbfb 15%, #fafafa 85%);
+  background-image: linear-gradient(15deg, #fbfbfb 15%, #fafafa 85%);
+  text-shadow: 0 1px 0 #ffffff;
+  height: auto;
+  overflow: auto;
+  max-width: 400px;
+  text-align: left; }
+  .tab-tour-detail {
+    line-height: 1;
+    padding: 0.8em 1.2em;
+    text-align: right;
+    display: inline-block; }
+    .tab-tour-detail-currency {
+      font-size: 1.2em;
+      font-weight: bold; }
+      .tab-tour-detail-currency--US {
+        color: #ff7e00;
+        font-size: 2em;
+        font-weight: bold; }
+        .tab-tour-detail-currency--US:before {
+          font-family: "Arial";
+          content: "\24";
+          font-size: 0.9em;
+          position: relative;
+          text-shadow: 1px 1px 0px #FFFFFF; }
+  .tab-tour-btn {
+    -moz-border-radius: 4px / 3px;
+    -webkit-border-radius: 4px / 3px;
+    border-radius: 4px / 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #ff8c07;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.17);
+    border: 1px solid #eda853;
+    float: right;
+    margin: 0.8em; }
+    .tab-tour-btn:hover {
+      background-color: #ffa545; }
+    .tab-tour-btn--txt {
+      color: #fff;
+      font-size: 1em;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.17);
+      padding: 0.45em 1em;
+      position: relative;
+      bottom: 3px;
+      font-weight: 100; }
+      .tab-tour-btn--txt:after {
+        content: url("../img/arrow_btn.png");
+        position: relative;
+        left: 5px;
+        top: 5px; }
+.tab-teaser {
+  width: 50px;
+  height: 40px;
+  left: 10px;
+  top: 0;
+  background: #FF0000;
+  color: #f8fbe9;
+  font-family: "Arial";
+  font-size: 16px;
+  text-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding-top: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px; }
+  .tab-teaser:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 0, 0, 0);
+    border-top-color: #ff0000;
+    border-width: 15px 25px;
+    margin-left: -25px; }
+.tab-price {
+  background-color: #F4302D;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: auto;
+  line-height: 1;
+  padding: 1%;
+  position: relative;
+  right: 0;
+  text-align: right;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.39);
+  width: 100%;
+  max-width: 251px;
+  margin-bottom: 10px; }
+  .tab-price:before {
+    background-image: url("../img/hotels-com.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 7px;
+    position: absolute;
+    width: 38%; }
+  .tab-price a {
+    color: #fff;
+    text-decoration: none; }
+  .tab-price span {
+    font-size: 0.6em;
+    font-weight: normal; }
+.tab-hilight {
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: relative;
+  width: 70%;
+  max-height: 116px; }
+  .tab-hilight-detail {
+    float: left;
+    padding: 1.5em 0 1.5em 1.5em;
+    width: 66.4%; }
+    .tab-hilight-detail h4 {
+      font-family: "Arial";
+      font-weight: 500;
+      font-size: 2em;
+      line-height: 1.3;
+      padding-right: 10px;
+      margin-bottom: 0;
+      text-align: left; }
+      .tab-hilight-detail h4 a {
+        color: #494949;
+        text-decoration: none; }
+    .tab-hilight-detail div {
+      float: none; }
+    .tab-hilight-detail p {
+      font-size: 1em;
+      margin-top: 5px; }
+  .tab-hilight-price {
+    padding: 2em 1em 2em 0;
+    width: 20%;
+    display: inline-block;
+    top: 30px;
+    position: relative; }
+    .tab-hilight-price-currency {
+      font-size: 1.5em; }
+      .tab-hilight-price-currency--THB {
+        color: #f444a9;
+        font-size: 3em;
+        font-weight: bold;
+        padding-left: 5px; }
 
 .teaser-big-detail {
   font-family: "Arial";
