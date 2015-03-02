@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*	
 	1. When create variable use underscore 	( _ )
 	2. When create class name use dash  ( - )
@@ -44,31 +45,31 @@ p {
 pre {
   padding: 0 !important; }
 
-.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr {
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-footer {
   margin-bottom: 20px !important; }
 
 dd, dt, dl, p {
   margin: 0;
   padding: 0; }
 
-.button-destination, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-font pre, .wrapper-header pre, .wrapper-header-related pre, .wrapper-header-related h3:before, .wrapper-header-related h3:after, .block-color, .block-color-star:before, .block-color-star-5:before, .block-color-star-4:before, .block-color-star-3:before, .block-color-star-2:before, .block-color-star-1:before, .code-preview-icn {
+.button-destination, .teaser-big-detail-hilight h5, .teaser-big-detail-hilight p, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-footer, .wrapper-font pre, .wrapper-header pre, .wrapper-header-related pre, .wrapper-header-related h3:before, .wrapper-header-related h3:after, .wrapper-footer-text, .wrapper-footer-title, .wrapper-footer-title--feedback, .block-color, .block-color-star:before, .block-color-star-5:before, .block-color-star-4:before, .block-color-star-3:before, .block-color-star-2:before, .block-color-star-1:before, .code-preview-icn {
   display: block;
   width: 100%;
   margin: 0 auto; }
 
-.wrapper div, .wrapper-font div, .wrapper-top10 div, .wrapper-header div, .wrapper-header-related div, .wrapper-hr div, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .wrapper-font p, .wrapper-top10 ol li {
+.wrapper div, .wrapper-font div, .wrapper-top10 div, .wrapper-header div, .wrapper-header-related div, .wrapper-hr div, .wrapper-footer div, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-footer, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .wrapper-font p, .wrapper-top10 ol li {
   clear: both; }
 
-p, .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-header-related h2, .wrapper-hr h2, .wrapper-font h1, .wrapper-font h3, .wrapper-font h4, .wrapper-top10 ol li {
+p, .teaser-big-detail-hilight h5, .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-header-related h2, .wrapper-hr h2, .wrapper-footer h2, .wrapper-font h1, .wrapper-font h3, .wrapper-font h4, .wrapper-top10 ol li, .wrapper-footer-title, .wrapper-footer-title--feedback {
   text-align: left; }
 
-.button-destination, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr {
+.button-destination, .wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-footer {
   text-align: center; }
 
-.top-menu li, .promo-tab-red, .promo-tab-hilight, .button-destination, .tab-tour, .tab-teaser, .tab-price, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .block-color-star-5, .block-color-star-4, .block-color-star-3, .block-color-star-2, .block-color-star-1, .block-color li {
+.top-menu li, .promo-tab-red, .promo-tab-hilight, .button-destination, .tab-tour, .tab-teaser, .tab-price, .feature, .feature h4, .feature p, .teaser-big-detail-hilight, .teaser-big-detail-hilight h4, .teaser-big-detail-hilight h5, .teaser-big-detail-hilight p, .wrapper-font h1, .wrapper-font h2, .wrapper-font h3, .wrapper-font h4, .wrapper-footer-text, .wrapper-footer-title, .wrapper-footer-title--feedback, .block-color-star-5, .block-color-star-4, .block-color-star-3, .block-color-star-2, .block-color-star-1, .block-color li {
   float: left; }
 
-.wrapper .language-html, .wrapper-font .language-html, .wrapper-top10 .language-html, .wrapper-header .language-html, .wrapper-header-related .language-html, .wrapper-hr .language-html, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
+.tab-hilight-price-currency, .tab-hilight-price-currency--THB, .wrapper .language-html, .wrapper-font .language-html, .wrapper-top10 .language-html, .wrapper-header .language-html, .wrapper-header-related .language-html, .wrapper-hr .language-html, .wrapper-footer .language-html, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
   float: right; }
 
 .wrapper-font .language-html, .code-preview:checked ~ dd > pre, .code-preview-button:checked ~ dd > pre {
@@ -83,7 +84,7 @@ pre {
 .top-menu li, .top-menu-detail li, .wrapper-top10 ol li, .block-color, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
   cursor: pointer; }
 
-.button-destination, .tab-teaser, .teaser-big-detail, .wrapper-font .language-html, .wrapper-header h3, .wrapper-header-related h3, .wrapper-header h3:after, .wrapper-header-related h3:after, .wrapper-header-related h3:before, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
+.button-destination, .tab-teaser, .teaser-big-detail, .teaser-big-detail-hilight, .wrapper-font .language-html, .wrapper-header h3, .wrapper-header-related h3, .wrapper-header h3:after, .wrapper-header-related h3:after, .wrapper-header-related h3:before, .wrapper-footer-title, .wrapper-footer-title--feedback, .code-preview, .code-preview-button, .code-preview-icn, .code-preview-icn-all {
   position: relative; }
 
 .top-menu {
@@ -93,21 +94,21 @@ pre {
   padding-left: 0.78%; }
 
 body {
-  background-color: #f5f5f5; }
+  background-color: #f4f4f3; }
 
 .body-wrapper {
   padding-top: 50px; }
 
 .top-menu {
   width: 100%;
-  color: #fff;
+  color: #494949;
   padding-bottom: 2px;
   text-align: left;
   font-size: 1.3em;
   padding-left: 5%;
   padding-top: 10px;
   border-bottom: 1px solid #E8E8E8;
-  background-color: #556E83;
+  background-color: #fff;
   margin-top: 0; }
   .top-menu li {
     text-decoration: none;
@@ -116,13 +117,16 @@ body {
     float: right !important;
     padding-right: 10%; }
     .top-menu-detail li {
-      padding-right: 20px; }
+      padding-right: 20px;
+      opacity: 0.6; }
+      .top-menu-detail li:hover {
+        opacity: 1; }
     .top-menu-detail .active {
-      border-bottom-color: #ea168b;
       padding-bottom: 10px;
       border-bottom: 1px solid;
       padding-right: 0;
-      margin-right: 20px; }
+      margin-right: 20px;
+      opacity: 1; }
 
 .promo-tab-red {
   background-color: #F00;
@@ -183,7 +187,7 @@ body {
   background-image: linear-gradient(15deg, #fbfbfb 15%, #fafafa 85%);
   text-shadow: 0 1px 0 #ffffff;
   height: auto;
-  overflow: auto;
+  overflow: visible;
   max-width: 400px;
   text-align: left; }
   .tab-tour-detail {
@@ -314,10 +318,12 @@ body {
       line-height: 1.3;
       padding-right: 10px;
       margin-bottom: 0;
-      text-align: left; }
+      text-align: left;
+      text-shadow: 0 1px 1px white; }
       .tab-hilight-detail h4 a {
         color: #494949;
-        text-decoration: none; }
+        text-decoration: none;
+        font-weight: 600; }
     .tab-hilight-detail div {
       float: none; }
     .tab-hilight-detail p {
@@ -330,33 +336,108 @@ body {
     top: 30px;
     position: relative; }
     .tab-hilight-price-currency {
-      font-size: 1.5em; }
+      font-size: 1.3em; }
       .tab-hilight-price-currency--THB {
         color: #f444a9;
         font-size: 3em;
         font-weight: bold;
         padding-left: 5px; }
 
-.teaser-big-detail {
+.feature {
+  background-color: #fffff1;
+  box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 60%;
+  height: auto; }
+  .feature h4 {
+    color: #e34832;
+    font-size: 1.8em;
+    margin: 0;
+    font-family: Arial;
+    padding-right: 10px;
+    line-height: 1.2; }
+  .feature p {
+    font-size: 1em;
+    line-height: 1.6; }
+
+.teaser-big-detail, .teaser-big-detail-hilight {
   font-family: "Arial";
   top: 10px; }
-  .teaser-big-detail h4 {
+  .teaser-big-detail h4, .teaser-big-detail-hilight h4 {
     font-size: 1.5em;
     margin: 0; }
-    .teaser-big-detail h4 a {
+    .teaser-big-detail h4 a, .teaser-big-detail-hilight h4 a {
       color: #494949;
       line-height: 22px; }
-  .teaser-big-detail p {
+  .teaser-big-detail p, .teaser-big-detail-hilight p {
     width: 70% !important;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 1em; }
-    .teaser-big-detail p a {
+    .teaser-big-detail p a, .teaser-big-detail-hilight p a {
       color: #ea168b;
       padding-bottom: 10px;
       letter-spacing: -0.2px;
       text-decoration: none; }
-  .teaser-big-detail .language-html {
+  .teaser-big-detail .language-html, .teaser-big-detail-hilight .language-html {
     top: 0 !important; }
+  .teaser-big-detail-hilight {
+    padding: 1.1em;
+    position: relative;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.2);
+    text-overflow: ellipsis;
+    height: 120px;
+    width: 60%;
+    background-color: #fdf4d7; }
+    .teaser-big-detail-hilight:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(253, 244, 215, 0);
+      -moz-border-bottom-colors: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-bottom-color: #fdf4d7;
+      border-width: 12px;
+      margin-left: -12px;
+      z-index: 0; }
+    .teaser-big-detail-hilight h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.65em;
+      font-weight: 600;
+      line-height: 1.3; }
+      .teaser-big-detail-hilight h4 a {
+        line-height: 22px;
+        text-decoration: none;
+        margin: 0;
+        color: #656565; }
+    .teaser-big-detail-hilight h5 {
+      font-size: 1.1em;
+      color: #0F4295;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: 300; }
+    .teaser-big-detail-hilight p {
+      width: 100% !important;
+      margin: 0;
+      text-overflow: ellipsis;
+      padding-top: 5px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      line-height: 15px;
+      font-size: 1em;
+      color: #494949; }
 
 .div-line {
   border-bottom: 3px solid #D9DADA;
@@ -366,19 +447,20 @@ body {
 .no-hover:hover {
   background-color: #fff !important; }
 
-.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr {
+.wrapper, .wrapper-font, .wrapper-top10, .wrapper-header, .wrapper-header-related, .wrapper-hr, .wrapper-footer {
   overflow: auto;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 2% !important;
   background-color: #fff;
   max-width: 900px;
   padding: 10px;
   box-shadow: 0 0 1px 0 rgba(44, 54, 67, 0.3);
   border-radius: 5px; }
-  .wrapper .language-html, .wrapper-font .language-html, .wrapper-top10 .language-html, .wrapper-header .language-html, .wrapper-header-related .language-html, .wrapper-hr .language-html {
+  .wrapper .language-html, .wrapper-font .language-html, .wrapper-top10 .language-html, .wrapper-header .language-html, .wrapper-header-related .language-html, .wrapper-hr .language-html, .wrapper-footer .language-html {
     margin-top: 5px;
     margin-bottom: 5px; }
-  .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-header-related h2, .wrapper-hr h2 {
+  .wrapper h2, .wrapper-font h2, .wrapper-top10 h2, .wrapper-header h2, .wrapper-header-related h2, .wrapper-hr h2, .wrapper-footer h2 {
     padding-left: 5%; }
   h1:first-child, .wrapper-font h1:first-child, .base-h1 {
     color: #297CBB;
@@ -413,53 +495,92 @@ body {
     line-height: 1.3; }
     .wrapper-top10 ol li:hover {
       text-decoration: underline; }
-  .wrapper-header h3, .wrapper-header-related h3 {
-    color: #474646;
-    font-weight: 600;
-    margin: 0;
-    font-size: 2.5em;
-    font-family: Arial;
-    letter-spacing: -0.8px;
-    line-height: 1.3; }
-  .wrapper-header h3:after, .wrapper-header-related h3:after {
-    content: url("../img/go50.png");
-    top: 0.5em;
-    left: 0.2em; }
-  .wrapper-header div, .wrapper-header-related div {
-    font-size: 1.2em;
-    margin: 0 auto;
-    color: #666666; }
-  .wrapper-header-related {
-    padding-top: 30px; }
-    .wrapper-header-related h3 {
-      color: #a09e9e;
-      font-size: 1.8em;
-      line-height: 0;
-      display: inline-block; }
-      .wrapper-header-related h3:before {
-        background-image: url("../img/line-dot.png");
-        background-repeat: no-repeat;
-        content: "";
-        height: 7px;
-        width: 100%;
-        right: 115%;
-        -webkit-transform: scaleX(-1);
-        -moz-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        transform: scaleX(-1); }
-      .wrapper-header-related h3:after {
-        background-image: url("../img/line-dot.png");
-        background-repeat: no-repeat;
-        content: "";
-        height: 7px;
-        width: 100%;
-        left: 115%;
-        top: -5px; }
-    .wrapper-header-related .code-preview-button {
-      top: -25px;
-      background-color: #fff;
-      z-index: 400; }
+  .wrapper-header, .wrapper-header-related {
+    line-height: 1.45;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto; }
+    .wrapper-header h3, .wrapper-header-related h3 {
+      color: #474646;
+      font-weight: 600;
+      margin: 0;
+      font-size: 2.5em;
+      font-family: Arial;
+      letter-spacing: -0.8px;
+      line-height: 1.3; }
+    .wrapper-header h3:after, .wrapper-header-related h3:after {
+      content: url("../img/go50.png");
+      top: 0.5em;
+      left: 0.2em; }
+    .wrapper-header div, .wrapper-header-related div {
+      font-size: 1.2em;
+      margin: 0 auto;
+      color: #666666; }
+    .wrapper-header-related {
+      padding-top: 30px; }
+      .wrapper-header-related h3 {
+        color: #a09e9e;
+        font-size: 1.8em;
+        line-height: 0;
+        display: inline-block; }
+        .wrapper-header-related h3:before {
+          background-image: url("../img/line-dot.png");
+          background-repeat: no-repeat;
+          content: "";
+          height: 7px;
+          width: 100%;
+          right: 115%;
+          -webkit-transform: scaleX(-1);
+          -moz-transform: scaleX(-1);
+          -ms-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          transform: scaleX(-1); }
+        .wrapper-header-related h3:after {
+          background-image: url("../img/line-dot.png");
+          background-repeat: no-repeat;
+          content: "";
+          height: 7px;
+          width: 100%;
+          left: 115%;
+          top: -5px; }
+      .wrapper-header-related .code-preview-button {
+        top: -25px;
+        background-color: #fff;
+        z-index: 400; }
+  .wrapper-footer {
+    width: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQ…P86Lz8PwMUfGD4zsAIEwBxBBg4IQIwDkgh40Pnef9BMjAAALe3EVT9sc6PAAAAAElFTkSuQmCC) repeat;
+    margin-top: 2%;
+    padding-bottom: 1%; }
+    .wrapper-footer a {
+      color: #fbd137;
+      text-decoration: none; }
+    .wrapper-footer-title, .wrapper-footer-title--feedback {
+      font-size: 2em;
+      font-style: italic;
+      bottom: 20px;
+      color: #fbd137;
+      font-weight: 600;
+      top: -3px; }
+      .wrapper-footer-title--feedback:after {
+        top: 22px !important;
+        width: 80px !important;
+        left: 8px !important;
+        background-size: 60px auto;
+        content: '';
+        background: url("../img/feed_bubble.png") no-repeat;
+        width: 60px;
+        height: 70px;
+        display: inline-block;
+        position: relative;
+        top: 20px; }
+    .wrapper-footer-text {
+      color: #FFFFFF;
+      float: right;
+      margin: 0 auto;
+      position: relative;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      font-weight: normal; }
 
 .block-color-star:before, .block-color-star-5:before, .block-color-star-4:before, .block-color-star-3:before, .block-color-star-2:before, .block-color-star-1:before {
   color: #fcc416;
